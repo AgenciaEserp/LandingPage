@@ -1,15 +1,18 @@
-// scripts.js
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
 
-document.addEventListener("DOMContentLoaded", function () {
-    const ctaButton = document.querySelector(".cta-button");
-    
-    ctaButton.addEventListener("mouseover", function () {
-        ctaButton.style.backgroundColor = "#F4A261";
-        ctaButton.style.transform = "scale(1.1)";
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
     });
-    
-    ctaButton.addEventListener("mouseout", function () {
-        ctaButton.style.backgroundColor = "#F4A261";
-        ctaButton.style.transform = "scale(1)";
-    });
+});
+
+// Example: Toggle a class for mobile navigation
+const navToggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('nav ul');
+
+navToggle.addEventListener('click', () => {
+    nav.classList.toggle('nav-open');
 });
