@@ -1,72 +1,154 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Lead de Venpu</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">Venpu</div>
-            <ul>
-                <li><a href="#features">Características</a></li>
-                <li><a href="#benefits">Beneficios</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    color: #333;
+}
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Aumenta tus Ventas con Auto Lead de Venpu</h1>
-            <p>Captura clientes altamente cualificados y optimiza tus recursos.</p>
-            <a href="#contact" class="cta-button">¡Regístrate Ahora!</a>
-        </div>
-    </section>
+header {
+    background-color: #2E3B4E;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    <section id="features">
-        <h2>Características</h2>
-        <div class="features-container">
-            <div class="feature">
-                <h3>Captura Automatizada</h3>
-                <p>Optimiza la captura de leads con herramientas automatizadas.</p>
-            </div>
-            <div class="feature">
-                <h3>Integración de Datos</h3>
-                <p>Accede a datos externos para mejorar la calidad de tus prospectos.</p>
-            </div>
-            <div class="feature">
-                <h3>Análisis en Tiempo Real</h3>
-                <p>Optimiza tus campañas con análisis en tiempo real.</p>
-            </div>
-        </div>
-    </section>
+header .logo img {
+    width: 150px;
+}
 
-    <section id="benefits">
-        <h2>Beneficios</h2>
-        <p>Con Auto Lead de Venpu, mejoras la eficiencia de tu proceso de ventas, incrementando conversiones y reduciendo costos.</p>
-    </section>
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
 
-    <section id="contact">
-        <h2>Contacto</h2>
-        <form action="#" method="POST">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
+header ul li {
+    margin: 0 15px;
+}
 
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" required></textarea>
+.hero {
+    background-color: #1C1C1E;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+}
 
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
 
-    <footer>
-        <p>&copy; 2024 Venpu. Todos los derechos reservados.</p>
-    </footer>
-</body>
-</html>
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    background-color: #F4A261;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.hero-image {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 300px;
+}
+
+.section-features {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature {
+    width: 30%;
+    text-align: center;
+}
+
+.feature img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.section-benefits {
+    background-color: #F4A261;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.benefits-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.benefits-content img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.section-contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contact button {
+    background-color: #2E3B4E;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #2E3B4E;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
