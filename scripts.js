@@ -1,6 +1,15 @@
+// scripts.js
 
-// Simple script for form submission alert (for demonstration purposes)
-document.querySelector('form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Formulario enviado. Nos pondremos en contacto contigo pronto.');
+document.addEventListener("DOMContentLoaded", function () {
+    const ctaButton = document.querySelector(".cta-button");
+    
+    ctaButton.addEventListener("mouseover", function () {
+        ctaButton.style.backgroundColor = "#F4A261";
+        ctaButton.style.transform = "scale(1.1)";
+    });
+    
+    ctaButton.addEventListener("mouseout", function () {
+        ctaButton.style.backgroundColor = "#F4A261";
+        ctaButton.style.transform = "scale(1)";
+    });
 });
